@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Card = () => {
+const BasicCardCompoent = () => {
   const data = [
     {
       image:
@@ -42,4 +42,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default BasicCardCompoent;
