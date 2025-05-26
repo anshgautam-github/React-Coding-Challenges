@@ -10,7 +10,7 @@ function App() {
   function handleIncreament(){
     val.current+=1;
     console.log("Value of val: " ,val.current);
-    setCount(count+1);
+    setCount(count+1); //setState hmesha re-render krega
   }
 
   useEffect(()=>{
