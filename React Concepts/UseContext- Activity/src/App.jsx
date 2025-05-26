@@ -13,7 +13,7 @@ function App() {
 
   return ( 
 
-    <div> 
+    <div>   
       <userContext.Provider value={user}>
         <themeContext.Provider value={{theme,setTheme}}>  
           <div id="container" style={{backgroundColor: theme==="light" ? "beige" : "black"}}>
