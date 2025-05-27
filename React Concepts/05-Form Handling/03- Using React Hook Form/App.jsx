@@ -17,6 +17,7 @@ const App = () => {
          className="px-3 py-1 bg-sky-600 rounded-sm text-white text-sm"
           type="submit"
           disabled={isSubmitting}
+          value={isSubmitting?"Submitting":"Submit"}
         />
       </form>
     </div>
