@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 const App = () => {
  
-  const {register,handleSubmit}=useForm();
+  const {register,handleSubmit,watch,formState:{errors,isSubmitting}}=useForm();
 
   return (
     <div className="p-4">
@@ -16,6 +16,7 @@ const App = () => {
         <input
          className="px-3 py-1 bg-sky-600 rounded-sm text-white text-sm"
           type="submit"
+          disabled={isSubmitting}
         />
       </form>
     </div>
