@@ -27,4 +27,12 @@ export default App
 
 USECASE -> i don;t know in advance, how many props are coming -> 1 , 2, 3...etc, but for handling them we can handle like this.
 
+NOTE -> 
+
+<Card> ...  </Card>
+<Card> ...  </Card>
+
+NOW, if we do -> {props.children} in the card component-> then dono ke component ke children output honge.
+
+
 */
