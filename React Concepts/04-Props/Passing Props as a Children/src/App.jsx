@@ -16,3 +16,13 @@ function App() {
 }
 
 export default App
+
+
+/*
+<Card>
+  ....  yeh sab iske andr jo likha jayega -> we call them as a children 
+  ....  in the above eg -> both h1 and p are children of Card. 
+  ....  To output them ek sath -> we can do -> {props.children}
+</Card>
+
+*/
