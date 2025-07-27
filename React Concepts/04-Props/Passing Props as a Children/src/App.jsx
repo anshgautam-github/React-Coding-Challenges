@@ -9,7 +9,7 @@ function App() {
         <p>how are you</p>
       </Card>
       <Card children="I am the chidlren">
-        Hello i am the one doing overriding the above chidlren
+        Hello i am the one doing overriding the above chidlren 
       </Card>
     </>
   )
@@ -27,12 +27,34 @@ export default App
 
 USECASE -> i don;t know in advance, how many props are coming -> 1 , 2, 3...etc, but for handling them we can handle like this.
 
-NOTE -> 
+------------------------------------------------------------------------------------------------------------------------
+NOTE 1-> 
+------------------------------------------------------------------------------------------------------------------------
 
 <Card> ...  </Card>
 <Card> ...  </Card>
 
 NOW, if we do -> {props.children} in the card component-> then dono ke component ke children output honge.
 
+------------------------------------------------------------------------------------------------------------------------
+NOTE 2-> 
+--------------------------------------------------------------------------------------------------------------------------------
 
+<Card> ...  </Card>
+<Card children="Hi"> 
+    Hello
+</Card>
+
+Here, in this case -> hello, will be printed, bcoz "hello" ->children will override the "hi" children.
+
+--------------------------------------------------------------------------------------------------------------------------------
+NOTE 3-> 
+--------------------------------------------------------------------------------------------------------------------------------
+
+<Card> ...  </Card>
+<Card children="Hi"> 
+
+</Card>
+
+Here, in this case -> {props.children} -> will print all the chidlrens .
 */
