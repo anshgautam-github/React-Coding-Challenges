@@ -1,1 +1,15 @@
-<img width="399" height="500" alt="image" src="https://github.com/user-attachments/assets/06e559c7-bebf-44ad-b404-8fb016aca069" />
+import React from 'react';
+import lovepic from '../assets/lovepic.jpeg';
+import './UserCard.css';
+
+const UserCard = () => {
+  return (
+    <div className="user-container">
+      <p id="user-name">Love Babbar</p>
+      <img id="user-img" src={lovepic} alt="love" />
+      <p id="user-desc">Description of Love Babbar</p>
+    </div>
+  );
+};
+
+export default UserCard;
